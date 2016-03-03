@@ -51,7 +51,7 @@
     BeaconDetails *beaconDetails = content;
     if ([beaconDetails.beaconName isEqual:@"AtsMint"]) {
         self.view.backgroundColor = beaconDetails.backgroundColor;
-        self.label.text = @"Kick Off Room .\nFollowing are the sessions here:\n - 10:00 am - Commencement\n - 04:00 pm Closing Session";
+        self.label.text = @"You're in Kick Off Room.\nFollowing are the sessions here:\n - 10:00 am - Commencement\n - 04:00 pm Closing Session";
         self.image.hidden = NO;
     } else if ([beaconDetails.beaconName isEqual:@"AtsIce"]) {
         self.view.backgroundColor = beaconDetails.backgroundColor;
@@ -59,7 +59,7 @@
         self.image.hidden = NO;
     } else if ([beaconDetails.beaconName isEqual:@"AtsBlue"]) {
         self.view.backgroundColor = beaconDetails.backgroundColor;
-        self.label.text = [NSString stringWithFormat:@"You're in 202 Room.\nFollowing are the sessions here:\n - 12:30 pm - Tech Talk1\n - 2:00pm Tech Talk2"];
+        self.label.text = @"You're in Room 202.\nFollowing are the sessions here:\n - 12:30 pm - Tech Talk1\n - 2:00pm Tech Talk2";
         self.image.hidden = NO;
     } else {
         self.view.backgroundColor = BeaconDetails.neutralColor;
